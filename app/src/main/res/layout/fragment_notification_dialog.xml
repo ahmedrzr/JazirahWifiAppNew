@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NotificationDialogFragment">
+
+    <RelativeLayout
+        android:id="@+id/lyErrorNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red_900"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/errorIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_error_outline_24" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/errorClose"
+            android:layout_toEndOf="@+id/errorIcon"
+            android:text="@string/forgot_password_msg2"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/errorClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_close_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyInfoNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray_800"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/infoErrorIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_error_outline_24" />
+
+        <TextView
+            android:id="@+id/infoErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/infoClose"
+            android:layout_toEndOf="@+id/infoErrorIcon"
+            android:text="@string/forgot_password_msg2"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/infoClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_close_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lySuccessNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green_700"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/successIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_done_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/successMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/successIcon"
+            android:text="@string/hello_blank_fragment"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/successClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_close_24" />
+    </RelativeLayout>
+
+
+</LinearLayout>

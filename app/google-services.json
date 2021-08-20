@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "260026961618",
+    "project_id": "jazirahwifiapp",
+    "storage_bucket": "jazirahwifiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260026961618:android:1b9e39f7327f37a6c5670b",
+        "android_client_info": {
+          "package_name": "com.ahmed.jazirahwifiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260026961618-9n8arbjekd3ojg5eq6nimntsgvarduk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY-6tRmkDFRalT5HvIFCRq0LpVHx2z_pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260026961618-9n8arbjekd3ojg5eq6nimntsgvarduk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

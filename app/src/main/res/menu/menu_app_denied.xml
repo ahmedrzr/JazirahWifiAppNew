@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_out"
+        android:title="SignOut"
+        android:icon="@drawable/ic_signout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_admin"
+        android:title="@string/admin"
+        android:icon="@drawable/ic_baseline_person_24"
+        app:showAsAction="always"/>
+</menu>

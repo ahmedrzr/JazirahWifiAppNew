@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="cyan_900">#006064</color>
+    <color name="pink_800">#ad1457</color>
+    <color name="pink_900">#880e4f</color>
+    <color name="pink_700">#c2185b</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_500">#9e9e9e</color>
+    <color name="gray_400">#bdbdbd</color>
+    <!--colors for modern ui-->
+    <color name="gray_t50">#66000000</color>
+    <color name="orange_900">#bf360c</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="yellow_600">#fdd835</color>
+    <color name="yellow_500">#ffeb3b</color>
+    <color name="grey_200">#e0e0e0</color>
+    <color name="grey_100">#f5f5f5</color>
+    <color name="grey_50">#fafafa</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="lime_700">#afb42b</color>
+    <color name="lime_600">#c0ca33</color>
+    <color name="lime_500">#cddc39</color>
+    <color name="lime_900">#827717</color>
+    <color name="lime_800">#9e9d24</color>
+    <color name="green_700">#388e3c</color>
+    <color name="red_900">#b71c1c</color>
+    <color name="gray_800">#424242</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_confirmBottomSheetDialog"
+            app:destination="@id/confirmBottomSheetDialog" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_enroll"
+            app:destination="@id/navigation_enroll" />
+        <action
+            android:id="@+id/action_navigation_home_to_displayFragment"
+            app:destination="@id/displayFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_enroll"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.enrollment.EnrollmentFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_enroll">
+        <argument
+            android:name="wifiArg"
+            android:defaultValue="@null"
+            app:argType="com.ahmed.jazirahwifiapp.model.Wifi"
+            app:nullable="true" />
+        <argument
+            android:name="pos"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_navigation_enroll_pop"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="isToEdit"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_profileUpdateBottomSheetDialog"
+            app:destination="@id/profileUpdateBottomSheetDialog" />
+        <action
+            android:id="@+id/action_navigation_profile_to_signOutBottomSheetFragment"
+            app:destination="@id/signOutBottomSheetFragment" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/confirmBottomSheetDialog"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.dialogs.ConfirmBottomSheetDialog"
+        android:label="ConfirmBottomSheetDialog"
+        tools:layout="@layout/layout_bottom_sheet_confirm">
+        <argument
+            android:name="wifiArg"
+            app:argType="com.ahmed.jazirahwifiapp.model.Wifi" />
+        <argument
+            android:name="pos"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.display.DisplayFragment"
+        android:label="display_fragment"
+        tools:layout="@layout/display_fragment">
+        <argument
+            android:name="wifiArg"
+            app:argType="com.ahmed.jazirahwifiapp.model.Wifi"
+             />
+        <argument
+            android:name="fromAdmin"
+            app:argType="boolean"
+            android:defaultValue="false"
+            />
+        <action
+            android:id="@+id/action_displayFragment_pop"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/profileUpdateBottomSheetDialog"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.dialogs.ProfileUpdateBottomSheetDialog"
+        android:label="ProfileUpdateBottomSheetDialog"
+        tools:layout="@layout/fragment_profile_update_bottom_sheet_dialog">
+
+    </dialog>
+    <dialog
+        android:id="@+id/signOutBottomSheetFragment"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.dialogs.SignOutBottomSheetFragment"
+        android:label="SignOutBottomSheetFragment"
+        tools:layout="@layout/fragment_sign_out_bottom_sheet" />
+    <dialog
+        android:id="@+id/adminPrivilegeFragment"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.dialogs.AdminPrivilegeFragment"
+        android:label="fragment_admin_privilege"
+        tools:layout="@layout/fragment_admin_privilege" />
+    <dialog
+        android:id="@+id/notificationDialogFragment"
+        android:name="com.ahmed.jazirahwifiapp.ui.NotificationDialogFragment"
+        android:label="fragment_notification_dialog"
+        tools:layout="@layout/fragment_notification_dialog" >
+        <argument
+            android:name="isError"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="message"
+            app:argType="string" />
+        <argument
+            android:name="isInfo"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="isSuccess"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </dialog>
+</navigation>

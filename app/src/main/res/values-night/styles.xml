@@ -1,0 +1,132 @@
+<resources>
+
+    <style name="Widget.Theme.JazirahWifiApp.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.JazirahWifiApp.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="CustomDisplayTextView_DisplayNormal" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="CustomDisplayTextView_DisplayHeader" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:background">@color/cyan_900</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="CustomDisplayImageView">
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@color/cyan_900</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.TextInputLayout.HintTextAlt" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.AppTheme.TextInputLayoutList" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="hintTextAppearance">@style/TextAppearance.AppTheme.TextInputLayout.HintTextAlt
+        </item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">2dp</item>
+
+    </style>
+
+    <style name="login_quote" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/eagle_lake</item>
+        <item name="lineHeight">48dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="login_button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">30dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="small_fonts" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/artifika</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_font_family" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/artifika</item>
+
+    </style>
+
+    <style name="login_input_fields" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/login_input_field_bg</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/artifika</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <style name="search_input_fields" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">6dp</item>
+        <item name="hintTextColor">@color/gray_800</item>
+        <item name="android:background">@drawable/login_input_field_bg</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <style name="bottom_sheet_style" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="fontFamily">@font/artifika</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="fontFamily">@font/artifika</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/artifika</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+
+        <item name="android:activityOpenEnterAnimation">@anim/from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/to_right</item>
+    </style>
+
+    <style name="Widget.Theme.JazirahWifiApp.MyView" parent="">
+        <item name="android:background">@color/gray_600</item>
+        <item name="exampleColor">@color/light_blue_600</item>
+    </style>
+
+
+</resources>

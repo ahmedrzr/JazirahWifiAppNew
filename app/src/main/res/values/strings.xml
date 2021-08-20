@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">JazirahWifiApp</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="details_wifi">Details</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Enrollment</string>
+    <string name="title_profile">Profile</string>
+    <string name="wi_fi_name">Wi-Fi Name</string>
+    <string name="wi_fi_password">Wi-Fi Password</string>
+    <string name="security_type">Security Type</string>
+    <string name="connection_type">Connection Type</string>
+    <string name="ip_address">IP Address</string>
+    <string name="router_login_id">Router Login Id</string>
+    <string name="router_access_password">Router Access Password</string>
+    <string name="device_location">Device location</string>
+    <string name="add">Add</string>
+    <string name="broadcast_ssid">Broadcast SSID</string>
+    <string name="textview">TextView</string>
+    <string name="update">UPDATE</string>
+    <string name="share">Share</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+
+    <string-array name="wifi_security_modes">
+        <item>WEP(Wired Equivalent Protocol)</item>
+        <item>WPA(Wi-Fi Protected Access® Personal)</item>
+        <item>WPA2(Wi-Fi Protected Access® 2 Personal)</item>
+        <item> WPA2/WPA Mixed Mode</item>
+        <item>RADIUS</item>
+    </string-array>
+
+    <string-array name="wifi_connection_types">
+        <item>STATIC</item>
+        <item>DHCP</item>
+    </string-array>
+
+
+    <string-array name="app_access">
+        <item>Allowed</item>
+        <item>Denied</item>
+    </string-array>
+    <string-array name="app_push_notification">
+        <item>Enable</item>
+        <item>Disable</item>
+    </string-array>
+
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+
+    <string name="reset_email_or_password_msg">Are you sure you want to reset or change your email/password ?</string>
+    <string name="reset_email_or_password_header">Currently logged Email and Password</string>
+    <string name="new_password">New Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_quote">Already have an Account?</string>
+    <string name="sign_up_quote">Here\'s your first step with us!</string>
+    <string name="login">LogIn</string>
+    <string name="forgot">FORGOT</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signin">SignIn</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="done">Done</string>
+    <string name="forgot_password_msg1">Provide your account\'s password for which you want to reset your password!</string>
+    <string name="password_reset_email_sent">Password Reset Email Sent</string>
+    <string name="forgot_password_msg2">An email has been sent to your rescue email address, Follow the direction in the email to reset your password.</string>
+    <string name="security_type_wpa">Security Type: WPA</string>
+    <string name="wait">Wait!</string>
+    <string name="cancel">Cancel</string>
+    <string name="log_out">Log Out</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+    <string name="success">SUCCESS</string>
+    <string name="successfully_created">Congratulation, your account has been successfully created.</string>
+    <string name="continue_text">Continue</string>
+    <string name="remove_this_item">Are you sure you want to permanently remove this item?</string>
+    <string name="confirm">Confirm</string>
+    <string name="wi_fi_items">Wi-Fi\'s</string>
+    <string name="no_internet">Please check your internet connection!</string>
+    <string name="display_name">Display Name</string>
+    <string name="next">NEXT</string>
+    <string name="contact_system_administrator">\'You do not have sufficient access to app. Please contact your system administrator.\'</string>
+    <string name="permission_system_administrator">\'You do not have sufficient permission to modify. Please contact your system administrator.\'</string>
+    <string name="update_at">UpdateAt</string>
+    <string name="app_setting_setting_update">Settings are updated successfully!</string>
+    <string name="missing_input_fields">Please fill in all the required fields.</string>
+    <string name="error_invalid_email">invalid email address</string>
+    <string name="mismatch">Your password and confirmation password do not match.</string>
+    <string name="database_error_1">App user permission setting missing, please contact system administrator</string>
+    <string name="signing_out">sign-out</string>
+    <string name="title_activity_admin_login">AdminLoginActivity</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="title_activity_panel">PanelActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="no_admin_access">You do not have Administrator access!</string>
+    <string name="menu_app_permissions">App Permissions</string>
+    <string name="menu_user_permissions">User Permissions</string>
+    <string name="app_permissions">App Permissions</string>
+    <string name="no_changes_to_update">No changes to update!</string>
+    <string name="menu_wifi">wifi\'s</string>
+    <string name="app_access">App Access</string>
+    <string name="wifi_access_code">Wifi Access Code</string>
+    <string name="allowed_edit_view">Allow Edit View</string>
+    <string name="login_access">Login Access</string>
+    <string name="profile_image">profile image</string>
+    <string name="app_icon">app icon</string>
+    <string name="allowed">allowed</string>
+    <string name="_100">100</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="access_dinied">You can\'t access this application,Please contact your system administrator.</string>
+    <string name="approval_required">Approval required</string>
+    <string name="admin">Admin</string>
+    <string name="insufficient_privileges">Insufficient Privileges</string>
+    <string name="you_do_not_have_sufficient_privileges_to_view_contact_your_system_administrator">You do not have sufficient privileges to view. Contact your system administrator</string>
+    <string name="not_specified">Not Specified</string>
+    <string name="default_notification_channel_id">1194</string>
+    <string name="app_push_notification">App Push Notification</string>
+    <string name="home">Home</string>
+
+
+</resources>

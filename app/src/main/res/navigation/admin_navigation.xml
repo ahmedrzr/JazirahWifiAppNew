@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@id/nav_app">
+
+    <fragment
+        android:id="@+id/nav_app"
+        android:name="com.ahmed.jazirahwifiapp.ui.admin.panel.app.AppPermissionsFragment"
+        android:label="@string/menu_app_permissions"
+        tools:layout="@layout/fragment_app_permissions" />
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.ahmed.jazirahwifiapp.ui.admin.panel.users.UsersFragment"
+        android:label="@string/menu_user_permissions"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_nav_user_to_appUserPermissionEdit"
+            app:destination="@id/appUserPermissionEdit" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_wifi"
+        android:name="com.ahmed.jazirahwifiapp.ui.admin.panel.wifis.WifiFragment"
+        android:label="@string/menu_wifi"
+        tools:layout="@layout/fragment_wifi" >
+        <action
+            android:id="@+id/action_nav_wifi_to_wifiEditFragment"
+            app:destination="@id/wifiEditFragment" />
+        <action
+            android:id="@+id/action_nav_wifi_to_confirmBottomSheetDialog2"
+            app:destination="@id/confirmBottomSheetDialog2" />
+        <action
+            android:id="@+id/action_nav_wifi_to_displayFragment2"
+            app:destination="@id/displayFragment2" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/appUserPermissionEdit"
+        android:name="com.ahmed.jazirahwifiapp.ui.admin.panel.edit.AppUserPermissionEdit"
+        android:label="User Permission Edit"
+        tools:layout="@layout/fragment_user_permission_edit">
+        <argument
+            android:name="permissionsArg"
+            app:argType="com.ahmed.jazirahwifiapp.model.Permission" />
+    </fragment>
+    <fragment
+        android:id="@+id/wifiEditFragment"
+        android:name="com.ahmed.jazirahwifiapp.ui.admin.panel.edit.WifiEditFragment"
+        android:label="Wifi Edit"
+        tools:layout="@layout/fragment_wifi_edit">
+        <argument
+            android:name="wifiArgs"
+            app:argType="com.ahmed.jazirahwifiapp.model.Wifi" />
+    </fragment>
+    <dialog
+        android:id="@+id/confirmBottomSheetDialog2"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.dialogs.ConfirmBottomSheetDialog"
+        android:label="ConfirmBottomSheetDialog"
+        tools:layout="@layout/layout_bottom_sheet_confirm">
+        <argument
+            android:name="wifiArg"
+            app:argType="com.ahmed.jazirahwifiapp.model.Wifi" />
+        <argument
+            android:name="pos"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/displayFragment2"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.display.DisplayFragment"
+        android:label="display_fragment"
+        tools:layout="@layout/display_fragment" >
+        <argument
+            android:name="wifiArg"
+            app:argType="com.ahmed.jazirahwifiapp.model.Wifi" />
+        <argument
+            android:name="fromAdmin"
+            app:argType="boolean"
+            android:defaultValue="false"
+          />
+    </fragment>
+    <dialog
+        android:id="@+id/signOutBottomSheetFragment2"
+        android:name="com.ahmed.jazirahwifiapp.ui.main.dialogs.SignOutBottomSheetFragment"
+        android:label="SignOutBottomSheetFragment"
+        tools:layout="@layout/fragment_sign_out_bottom_sheet"/>
+    <dialog
+        android:id="@+id/notificationDialogFragment2"
+        android:name="com.ahmed.jazirahwifiapp.ui.NotificationDialogFragment"
+        android:label="fragment_notification_dialog"
+        tools:layout="@layout/fragment_notification_dialog" >
+        <argument
+            android:name="isError"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="message"
+            app:argType="string" />
+        <argument
+            android:name="isInfo"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="isSuccess"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </dialog>
+</navigation>
